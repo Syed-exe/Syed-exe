@@ -267,10 +267,10 @@
   <a href="https://syed.snapz.dev/contact">
     <img src="https://img.shields.io/badge/HIRE_ME-FF354F?style=for-the-badge&logoColor=white" />
   </a>
-  <a href="https://discord.gg/Snapz">
+  <a href="https://discord.gg/snap-z-1102558646505836606">
     <img src="https://img.shields.io/badge/DISCORD-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
   </a>
-  <a href="mailto:Support@snapz.dev">
+  <a href="mailto:snipeop69@gmail.com">
     <img src="https://img.shields.io/badge/EMAIL_ME-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
 </p>
