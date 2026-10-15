@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 920 340" width="100%" height="auto" style="background:#070b16; border-radius:18px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <radialGradient id="about_glow" cx="80%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ff354f" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#070b16" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="about_border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,53,79,0.7)" />
+      <stop offset="50%" stop-color="rgba(255,255,255,0.08)" />
+      <stop offset="100%" stop-color="rgba(36,123,255,0.6)" />
+    </linearGradient>
+
+    <style><![CDATA[
+      @keyframes prog1 { 0% { width: 0%; } 30%, 100% { width: 100%; } }
+      @keyframes prog2 { 0%, 33% { width: 0%; } 63%, 100% { width: 100%; } }
+      @keyframes prog3 { 0%, 66% { width: 0%; } 96%, 100% { width: 100%; } }
+
+      .bar-1 { animation: prog1 12s infinite; }
+      .bar-2 { animation: prog2 12s infinite; }
+      .bar-3 { animation: prog3 12s infinite; }
+
+      @keyframes slide1 { 0%, 30% { opacity: 1; transform: translateY(0); } 33%, 100% { opacity: 0; transform: translateY(-10px); } }
+      @keyframes slide2 { 0%, 33% { opacity: 0; transform: translateY(10px); } 36%, 63% { opacity: 1; transform: translateY(0); } 66%, 100% { opacity: 0; transform: translateY(-10px); } }
+      @keyframes slide3 { 0%, 66% { opacity: 0; transform: translateY(10px); } 69%, 96% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; transform: translateY(-10px); } }
+
+      .about-slide-1 { animation: slide1 12s infinite; }
+      .about-slide-2 { animation: slide2 12s infinite; }
+      .about-slide-3 { animation: slide3 12s infinite; }
+    ]]></style>
+  </defs>
+
+  <rect width="920" height="340" fill="#070b16" rx="18" />
+  <rect width="920" height="340" fill="url(#about_glow)" rx="18" />
+  <rect x="0.6" y="0.6" width="918.8" height="338.8" rx="17.4" fill="none" stroke="url(#about_border)" stroke-width="1.4" />
+
+  <!-- LEFT COLUMN: CAPABILITIES & CORE PILLARS -->
+  <g transform="translate(48, 45)">
+    <text x="0" y="0" fill="#ff354f" font-size="11" font-weight="800" letter-spacing="2">01 / CAPABILITIES &amp; ARCHITECTURE</text>
+    <text x="0" y="32" fill="#ffffff" font-size="24" font-weight="900" letter-spacing="0.5">Core Engineering Pillars</text>
+
+    <!-- Pillar 1 -->
+    <g transform="translate(0, 60)">
+      <rect width="360" height="60" rx="10" fill="rgba(15,23,42,0.85)" stroke="rgba(255,53,79,0.35)" stroke-width="1.2" />
+      <circle cx="28" cy="30" r="14" fill="rgba(255,53,79,0.15)" />
+      <text x="23" y="35" fill="#ff354f" font-size="14" font-weight="900">💻</text>
+      <text x="54" y="26" fill="#f0f6fc" font-size="13" font-weight="800">Full-Stack Web Platforms</text>
+      <text x="54" y="44" fill="#94a3b8" font-size="11">React, Next.js, Node.js, TypeScript, Tailwind</text>
+    </g>
+
+    <!-- Pillar 2 -->
+    <g transform="translate(0, 132)">
+      <rect width="360" height="60" rx="10" fill="rgba(15,23,42,0.85)" stroke="rgba(57,211,83,0.35)" stroke-width="1.2" />
+      <circle cx="28" cy="30" r="14" fill="rgba(57,211,83,0.15)" />
+      <text x="23" y="35" fill="#39d353" font-size="14" font-weight="900">⚡</text>
+      <text x="54" y="26" fill="#f0f6fc" font-size="13" font-weight="800">Discord Bots &amp; Automation</text>
+      <text x="54" y="44" fill="#94a3b8" font-size="11">Discord.js • Moderation • Tickets • Economy</text>
+    </g>
+
+    <!-- Pillar 3 -->
+    <g transform="translate(0, 204)">
+      <rect width="360" height="60" rx="10" fill="rgba(15,23,42,0.85)" stroke="rgba(36,123,255,0.35)" stroke-width="1.2" />
+      <circle cx="28" cy="30" r="14" fill="rgba(36,123,255,0.15)" />
+      <text x="23" y="35" fill="#247bff" font-size="14" font-weight="900">📡</text>
+      <text x="54" y="26" fill="#f0f6fc" font-size="13" font-weight="800">Backend, APIs &amp; AI Integrations</text>
+      <text x="54" y="44" fill="#94a3b8" font-size="11">Node, Python, Supabase, REST • AI features</text>
+    </g>
+  </g>
+
+  <!-- VERTICAL DIVIDER -->
+  <line x1="455" y1="45" x2="455" y2="295" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="4 4" />
+
+  <!-- RIGHT COLUMN: THREE-SLIDE INTERESTS CAROUSEL -->
+  <g transform="translate(490, 45)">
+    <text x="0" y="0" fill="#247bff" font-size="11" font-weight="800" letter-spacing="2">02 / FOCUS &amp; HIGHLIGHTS (AUTO-CYCLE)</text>
+    <!-- Header Arrow Buttons -->
+    <g transform="translate(305, -12)">
+      <rect x="0" y="0" width="32" height="22" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+      <text x="11" y="15" fill="#94a3b8" font-size="11" font-weight="900">❮</text>
+      <rect x="38" y="0" width="32" height="22" rx="5" fill="rgba(255,53,79,0.2)" stroke="rgba(255,53,79,0.6)" stroke-width="1" />
+      <text x="49" y="15" fill="#ff354f" font-size="11" font-weight="900">❯</text>
+    </g>
+    
+    <!-- Segment Progress Bars -->
+    <g transform="translate(0, 18)">
+      <rect x="0" y="0" width="115" height="3" rx="1.5" fill="rgba(255,255,255,0.12)" />
+      <rect class="bar-1" x="0" y="0" width="0" height="3" rx="1.5" fill="#ff354f" />
+
+      <rect x="130" y="0" width="115" height="3" rx="1.5" fill="rgba(255,255,255,0.12)" />
+      <rect class="bar-2" x="130" y="0" width="0" height="3" rx="1.5" fill="#39d353" />
+
+      <rect x="260" y="0" width="115" height="3" rx="1.5" fill="rgba(255,255,255,0.12)" />
+      <rect class="bar-3" x="260" y="0" width="0" height="3" rx="1.5" fill="#247bff" />
+    </g>
+
+    <!-- section -->
+    <g class="about-slide-1" transform="translate(0, 50)">
+      <rect width="380" height="210" rx="12" fill="rgba(12,19,36,0.95)" stroke="rgba(255,53,79,0.4)" stroke-width="1.2" />
+      <text x="24" y="36" fill="#ff354f" font-size="12" font-weight="800" letter-spacing="1">SLIDE 01 · MUSIC STREAMING</text>
+      <text x="24" y="66" fill="#f0f6fc" font-size="18" font-weight="900">Shiddat: Music Streaming Platform</text>
+      <text x="24" y="96" fill="#cbd5e1" font-size="13" font-weight="400">Modern streaming web app with synced lyrics,</text>
+      <text x="24" y="116" fill="#cbd5e1" font-size="13" font-weight="400">playlists, Blend tags and live friends activity.</text>
+      <text x="24" y="146" fill="#fca5a5" font-size="12" font-weight="700">✓ Web + Mac/Windows/APK  ✓ Synced lyrics</text>
+      <g transform="translate(24, 168)">
+        <rect width="78" height="24" rx="4" fill="rgba(255,53,79,0.2)" />
+        <text x="12" y="16" fill="#f87171" font-size="11" font-weight="700">Next.js</text>
+        <rect x="86" y="0" width="82" height="24" rx="4" fill="rgba(255,53,79,0.2)" />
+        <text x="96" y="16" fill="#f87171" font-size="11" font-weight="700">Supabase</text>
+        <rect x="176" y="0" width="82" height="24" rx="4" fill="rgba(255,53,79,0.2)" />
+        <text x="187" y="16" fill="#f87171" font-size="11" font-weight="700">Streaming</text>
+
+        <!-- Slide Navigation Arrows -->
+        <g transform="translate(268, 0)">
+          <rect x="0" y="0" width="28" height="24" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+          <text x="8" y="16" fill="#cbd5e1" font-size="12" font-weight="900">❮</text>
+          <rect x="34" y="0" width="28" height="24" rx="6" fill="rgba(255,53,79,0.25)" stroke="rgba(255,53,79,0.7)" stroke-width="1" />
+          <text x="43" y="16" fill="#ff354f" font-size="12" font-weight="900">❯</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- SLIDE 2: HealthTech & Dispatch Engines -->
+    <g class="about-slide-2" transform="translate(0, 50)">
+      <rect width="380" height="210" rx="12" fill="rgba(12,19,36,0.95)" stroke="rgba(57,211,83,0.4)" stroke-width="1.2" />
+      <text x="24" y="36" fill="#39d353" font-size="12" font-weight="800" letter-spacing="1">SLIDE 02 · CLOUD INFRASTRUCTURE</text>
+      <text x="24" y="66" fill="#f0f6fc" font-size="18" font-weight="900">SnapZCloud Hosting Platform</text>
+      <text x="24" y="96" fill="#cbd5e1" font-size="13" font-weight="400">High-performance hosting for cloud servers, VPS,</text>
+      <text x="24" y="116" fill="#cbd5e1" font-size="13" font-weight="400">Minecraft and bot hosting with infinite scalability.</text>
+      <text x="24" y="146" fill="#86efac" font-size="12" font-weight="700">✓ Cloud + VPS  ✓ Bot &amp; game hosting</text>
+      <g transform="translate(24, 168)">
+        <rect width="78" height="24" rx="4" fill="rgba(57,211,83,0.2)" />
+        <text x="14" y="16" fill="#4ade80" font-size="11" font-weight="700">Cloud</text>
+        <rect x="86" y="0" width="82" height="24" rx="4" fill="rgba(57,211,83,0.2)" />
+        <text x="96" y="16" fill="#4ade80" font-size="11" font-weight="700">VPS</text>
+        <rect x="176" y="0" width="82" height="24" rx="4" fill="rgba(57,211,83,0.2)" />
+        <text x="188" y="16" fill="#4ade80" font-size="11" font-weight="700">Hosting</text>
+
+        <!-- Slide Navigation Arrows -->
+        <g transform="translate(268, 0)">
+          <rect x="0" y="0" width="28" height="24" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+          <text x="8" y="16" fill="#cbd5e1" font-size="12" font-weight="900">❮</text>
+          <rect x="34" y="0" width="28" height="24" rx="6" fill="rgba(57,211,83,0.25)" stroke="rgba(57,211,83,0.7)" stroke-width="1" />
+          <text x="43" y="16" fill="#39d353" font-size="12" font-weight="900">❯</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- SLIDE 3: Cloud Credentials & LLMs -->
+    <g class="about-slide-3" transform="translate(0, 50)">
+      <rect width="380" height="210" rx="12" fill="rgba(12,19,36,0.95)" stroke="rgba(36,123,255,0.4)" stroke-width="1.2" />
+      <text x="24" y="36" fill="#247bff" font-size="12" font-weight="800" letter-spacing="1">SLIDE 03 · CREATIVE WEB</text>
+      <text x="24" y="66" fill="#f0f6fc" font-size="18" font-weight="900">Itachi: Character Universe</text>
+      <text x="24" y="96" fill="#cbd5e1" font-size="13" font-weight="400">Cinematic scroll-driven anime tribute site with</text>
+      <text x="24" y="116" fill="#cbd5e1" font-size="13" font-weight="400">moonlit art direction and a full jutsu archive.</text>
+      <text x="24" y="146" fill="#93c5fd" font-size="12" font-weight="700">✓ Scroll animations  ✓ Cinematic UI</text>
+      <g transform="translate(24, 168)">
+        <rect width="84" height="24" rx="4" fill="rgba(36,123,255,0.2)" />
+        <text x="14" y="16" fill="#60a5fa" font-size="11" font-weight="700">Web</text>
+        <rect x="92" y="0" width="86" height="24" rx="4" fill="rgba(36,123,255,0.2)" />
+        <text x="100" y="16" fill="#60a5fa" font-size="11" font-weight="700">Motion</text>
+        <rect x="186" y="0" width="74" height="24" rx="4" fill="rgba(36,123,255,0.2)" />
+        <text x="198" y="16" fill="#60a5fa" font-size="11" font-weight="700">Design</text>
+
+        <!-- Slide Navigation Arrows -->
+        <g transform="translate(268, 0)">
+          <rect x="0" y="0" width="28" height="24" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+          <text x="8" y="16" fill="#cbd5e1" font-size="12" font-weight="900">❮</text>
+          <rect x="34" y="0" width="28" height="24" rx="6" fill="rgba(36,123,255,0.25)" stroke="rgba(36,123,255,0.7)" stroke-width="1" />
+          <text x="43" y="16" fill="#247bff" font-size="12" font-weight="900">❯</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
